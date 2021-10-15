@@ -19,13 +19,13 @@ const template = (item) => `
 `;
 
 const populate = (arr) => {
-  let content = "";
-  arr.forEach((item) => {
-    content += template(item);
-  });
-  container.innerHTML += content;
+    let content = "";
+    arr.forEach((item) => {
+        content += template(item);
+    });
+    container.innerHTML += content;
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  populate(data);
+    populate(data);
 });

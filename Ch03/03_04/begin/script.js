@@ -3,7 +3,7 @@ const rawData = '<?xml version="1.0"?><data><product><id>259</id><name>Raspberry
 // convert XML formatted string to a DOM node
 var peopleDataNode = (new DOMParser()).parseFromString(rawData, "text/xml");
 // convert DOM node to JSON
-var convertedData = xml2json(peopleDataNode,"");
+var convertedData = xml2json(peopleDataNode, "");
 // parse JSON data for use in JavaScript
 const convertedObject = JSON.parse(convertedData);
 // reference array of product data within object
@@ -19,13 +19,13 @@ const template = (item) => `
 `;
 
 const populate = (arr) => {
-  let content = "";
-  arr.forEach((item) => {
-    content += template(item);
-  });
-  container.innerHTML += content;
+    let content = "";
+    arr.forEach((item) => {
+        content += template(item);
+    });
+    container.innerHTML += content;
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-  populate(data);
+    populate(data);
 });

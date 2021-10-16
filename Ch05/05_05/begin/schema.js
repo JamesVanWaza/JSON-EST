@@ -34,7 +34,7 @@ let productSchema = {
     }
 };
 
-var personSchema = {
+let personSchema = {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "http://hplussport.com/schemas/person.json",
     "type": "object",

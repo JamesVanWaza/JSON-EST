@@ -1,5 +1,5 @@
 {
-    "@context": "http://schema.org/",
+    "@context": "https://schema.org/",
     "@type": "Event",
     "name": "5k Training Run",
     "description": "Want to run your first 5k? Join other runners and our h+ running coaches to train toward crossing that finish line. ",
